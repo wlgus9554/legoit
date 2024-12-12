@@ -26,6 +26,7 @@ public class MemberController {
 		log.info("writeForm.do");
 		return "member/writeForm";
 	}
+	
 	@GetMapping("/write.do")
 	public String write(MemberVO vo, RedirectAttributes rttr) {
 		// Controller에 write 부분을 알리기 위한 로그
@@ -35,6 +36,7 @@ public class MemberController {
 		// service -> write -> mapper
 		service.write(vo);
 		
+		// 처리 결과에 대한 메세지 처리.
 		rttr.addFlashAttribute("msg, 회원가입에 성공하였습니다.");
 		return "redirect:list.do";
 	}
