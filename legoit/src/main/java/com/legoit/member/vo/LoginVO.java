@@ -1,4 +1,4 @@
-package com.webjjang.member.vo;
+package com.legoit.member.vo;
 
 import lombok.Data;
 

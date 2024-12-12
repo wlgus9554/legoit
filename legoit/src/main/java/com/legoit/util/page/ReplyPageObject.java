@@ -1,4 +1,4 @@
-package com.webjjang.util.page;
+package com.legoit.util.page;
 
 import javax.servlet.http.HttpServletRequest;
 

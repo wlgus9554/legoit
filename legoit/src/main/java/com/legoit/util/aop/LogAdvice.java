@@ -1,4 +1,4 @@
-package com.webjjang.util.aop;
+package com.legoit.util.aop;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package com.webjjang.util.file;
+package com.legoit.util.file;
 
 import java.io.File;
 

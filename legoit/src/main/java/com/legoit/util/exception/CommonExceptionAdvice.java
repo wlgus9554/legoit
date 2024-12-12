@@ -1,4 +1,4 @@
-package com.wejjang.util.exception;
+package com.legoit.util.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.ui.Model;
