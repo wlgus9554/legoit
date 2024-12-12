@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper
-  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
-  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
-  <mapper namespace="com.legoit.member.mapper.MemberMapper">
-  
-  </mapper>
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	<mapper namespace="com.legoit.member.mapper.MemberMapper">
+		<insert id="write">
+			<!-- 먼저 MemberVO의 no에 setter를 이용해서 시퀀스에서 받아온 번호를 세팅해 준다. -->
+			<selectKey keyProperty="no" resultType="Long" order="BEFORE">
+				select member_seq.nextval from dual
+			</selectKey>
+				insert into member(no, title, content, writer, pw)
+				values(#{no}, #{title}, #{content}, #{writer}, #{pw})
+		</insert>
+	</mapper>
