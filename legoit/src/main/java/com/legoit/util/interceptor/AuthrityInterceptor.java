@@ -1,4 +1,4 @@
-package com.webjjang.util.interceptor;
+package com.legoit.util.interceptor;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -50,14 +50,14 @@
 	
 	<context:annotation-config></context:annotation-config>
 	
-	<context:component-scan base-package="com.webjjang" />
+	<context:component-scan base-package="com.legoit" />
 	
 	<aop:aspectj-autoproxy></aop:aspectj-autoproxy>
 	
 	<interceptors>
 		<interceptor>
 		<mapping path="/**"/>
-		<beans:bean class="com.webjjang.util.interceptor.AuthrityInterceptor" />
+		<beans:bean class="com.legoit.util.interceptor.AuthrityInterceptor" />
 		</interceptor>
 	</interceptors>
 	
